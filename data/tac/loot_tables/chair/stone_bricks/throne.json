@@ -1,0 +1,33 @@
+{
+  "pools": [{
+    "rolls": 1,
+    "entries": [{
+      "type": "minecraft:item",
+      "weight": 1,
+      "functions": [{
+          "function": "minecraft:set_nbt",
+          "tag": "{CustomModelData:9001330,Tags:[chk.chair,chk.chair.throne,chk.chair.stone_brick]}"
+        },
+        {
+          "function": "minecraft:set_name",
+          "name": {
+            "translate": "item.tac.chair.stone_brick.throne",
+            "italic": false,
+            "color": "#fcf0c2"
+          }
+        },
+        {
+          "function": "minecraft:set_lore",
+          "lore": [
+            {
+              "translate": "pack.tac_chk",
+              "color": "#732012",
+              "italic": false
+            }
+          ]
+        }
+      ],
+      "name": "minecraft:jungle_trapdoor"
+    }]
+  }]
+}

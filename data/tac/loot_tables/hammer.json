@@ -1,0 +1,33 @@
+{
+  "pools": [{
+    "rolls": 1,
+    "entries": [{
+      "type": "minecraft:item",
+      "weight": 1,
+      "functions": [{
+          "function": "minecraft:set_nbt",
+          "tag": "{CustomModelData:9002000,Tags:[chk.furniture_hammer],Unbreakable:1b,AttributeModifiers:[{AttributeName:generic.attack_damage,Amount:1,Slot:mainhand,Operation:0,UUID:[I;-121224,28818,173511,-57636],Name:generic.attack_damage}]}"
+        },
+        {
+          "function": "minecraft:set_name",
+          "name": {
+            "translate": "item.tac.hammer",
+            "italic": false,
+            "color": "white"
+          }
+        },
+        {
+          "function": "minecraft:set_lore",
+          "lore": [
+            {
+              "translate": "pack.tac_chk",
+              "color": "#732012",
+              "italic": false
+            }
+          ]
+        }
+      ],
+      "name": "minecraft:wooden_sword"
+    }]
+  }]
+}

@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "example": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location":{
+          "block": {
+            "tag": "minecraft:trapdoors"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "tac:table/interaction/clicked_table"
+  }
+}

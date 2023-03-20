@@ -1,0 +1,16 @@
+{
+	"criteria": {
+		"place": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"item": {
+					"item": "minecraft:jungle_trapdoor",
+					"nbt": "{Tags:[chk.table.dark_oak]}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "tac:table/place/init"
+	}
+} 

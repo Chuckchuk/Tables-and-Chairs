@@ -1,0 +1,43 @@
+{
+  "pools": [{
+    "rolls": 1,
+    "entries": [{
+      "type": "minecraft:item",
+      "weight": 1,
+      "functions": [{
+          "function": "minecraft:set_nbt",
+          "tag": "{CustomModelData:9001133,Tags:[chk.chair,chk.chair.carved,chk.chair.endstone_brick]}"
+        },
+        {
+          "function": "minecraft:set_name",
+          "name": {
+            "translate": "item.tac.chair.endstone_brick.carved",
+            "italic": false,
+            "color": "white"
+          }
+        },
+        {
+          "function": "minecraft:set_lore",
+          "lore": [
+            {
+              "translate": "pack.tac_chk",
+              "color": "#732012",
+              "italic": false
+            },
+            {
+              "translate": "item.tac.chair.carved_description.1",
+              "color": "#a8e2e3",
+              "italic": false
+            },
+            {
+              "translate": "item.tac.chair.carved_description.2",
+              "color": "#a8e2e3",
+              "italic": false
+            }
+          ]
+        }
+      ],
+      "name": "minecraft:jungle_trapdoor"
+    }]
+  }]
+}

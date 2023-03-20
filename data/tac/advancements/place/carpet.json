@@ -1,0 +1,15 @@
+{
+	"criteria": {
+		"place": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"item": {
+					"tag": "tac:carpets"
+					}
+				}
+			}
+		},
+	"rewards": {
+		"function": "tac:carpet/place/init"
+	}
+}

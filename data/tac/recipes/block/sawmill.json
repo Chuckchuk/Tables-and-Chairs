@@ -1,0 +1,20 @@
+{
+	"type": "crafting_shaped",
+	"group": "custom_block",
+	"pattern": [
+		" = ",
+		" | "
+	],
+	"key": {
+		"=": {
+			"item": "minecraft:iron_ingot"
+		},
+		"|": {
+			"tag": "minecraft:logs"
+		}
+	},
+	"result": {
+		"item": "minecraft:knowledge_book",
+		"count": 1
+	}
+}

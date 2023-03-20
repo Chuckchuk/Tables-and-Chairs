@@ -1,0 +1,16 @@
+{
+	"criteria": {
+		"place": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"item": {
+					"item": "minecraft:jungle_trapdoor",
+					"nbt": "{Tags:[chk.chair.endstone_brick]}"
+					}
+				}
+			}
+		},
+	"rewards": {
+		"function": "tac:chair/place/init"
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"display": {
+		"title": "Tables and Chairs",
+		"description": "v4.3.1",
+		"icon": {
+			"item": "minecraft:jungle_trapdoor",
+			"nbt": "{CustomModelData: 9001000}"
+		},
+		"announce_to_chat": false,
+		"show_toast": false
+	},
+	"criteria": {
+		"trigger": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"parent": "chuckchuk:chuckchuk"
+}

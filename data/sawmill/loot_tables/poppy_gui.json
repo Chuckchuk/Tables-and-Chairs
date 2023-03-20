@@ -1,0 +1,23 @@
+{
+    "pools": [{
+      "rolls": 1,
+      "entries": [{
+        "type": "minecraft:item",
+        "weight": 1,
+        "functions": [{
+            "function": "minecraft:set_nbt",
+            "tag": "{CustomModelData:9001501,lockedSlot:1b, Tags:[chk.gui,chk.inventory_remove]}"
+          },
+          {
+            "function": "minecraft:set_name",
+            "name": {
+              "translate": "",
+              "italic": false,
+              "color": "white"
+            }
+          }
+        ],
+        "name": "minecraft:poppy"
+      }]
+    }]
+  }

@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "tac:block/sawmill"
+			}
+		}
+	},
+	"rewards": {
+		"function": "tac:recipes/block/sawmill"
+	}
+}

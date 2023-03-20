@@ -1,0 +1,14 @@
+{
+	"condition": "minecraft:entity_properties",
+	"entity": "this",
+	"predicate": {
+		"equipment": {
+			"mainhand": {
+        "items": [
+          "minecraft:wooden_sword"
+        ],
+        "nbt": "{Tags:[chk.furniture_hammer]}"
+      }
+		}
+	}
+}

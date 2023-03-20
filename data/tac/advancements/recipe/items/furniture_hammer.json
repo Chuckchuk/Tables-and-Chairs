@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "tac:items/furniture_hammer"
+				
+			}
+		}
+	},
+	"rewards": {
+		"function": "tac:recipes/items/furniture_hammer"
+	}
+}
