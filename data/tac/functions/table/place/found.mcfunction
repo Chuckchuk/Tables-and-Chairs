@@ -2,9 +2,9 @@ scoreboard players set @s chk.distance -1
 scoreboard players set @s chk.fail 0
 
 # Summon Item Display for Legs
-summon minecraft:item_display ~ ~ ~ {item:{id:"jungle_trapdoor",Count:1,tag:{CustomModelData:9000000}},item_display:head,Tags:["chk.block","chk.table","chk.table.legs","chk.not_done","smithed.block"],view_range:0.8f,width:1,height:1}
+summon item_display ~ ~ ~ {item:{id:"jungle_trapdoor",Count:1,tag:{CustomModelData:9000000}},item_display:head,Tags:["chk.block","chk.table","chk.table.legs","chk.not_done","smithed.block","tac.V5.0"],view_range:0.8f,width:1,height:1}
 #Summon Item Display for Table Top
-summon minecraft:item_display ~ ~ ~ {item:{id:"jungle_trapdoor",Count:1,tag:{CustomModelData:9000000}},item_display:head,Tags:["chk.block","smithed.block","chk.table","chk.table.top"],view_range:0.8f,width:1,height:1,Rotation:[180f,0f,0f]}
+summon item_display ~ ~ ~ {item:{id:"jungle_trapdoor",Count:1,tag:{CustomModelData:9000000}},item_display:head,Tags:["chk.block","smithed.block","chk.table","chk.table.top","tac.V5.0"],view_range:0.8f,width:1,height:1,Rotation:[180f,0f,0f]}
 
 #Place the Trapdoor
 execute if entity @s[y_rotation=135..225] run fill ~ ~ ~ ~ ~ ~ jungle_trapdoor[half=top,facing=south] replace jungle_trapdoor

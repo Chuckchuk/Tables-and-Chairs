@@ -4,7 +4,6 @@ execute if block ~ ~1 ~ soul_torch run tag @s add chk.table.soul_torch
 execute if block ~ ~1 ~ lantern run tag @s add chk.table.lantern
 execute if block ~ ~1 ~ soul_lantern run tag @s add chk.table.soul_lantern
 
-
 #If Tagged, then replace the block and delete the item
 #Torch
 execute as @s[tag=chk.table.torch] if block ~ ~ ~ #minecraft:trapdoors[open=true] run kill @e[distance=0..2,type=item,nbt={Item:{id:"minecraft:torch",Count:1b}},limit=1]

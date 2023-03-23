@@ -9,8 +9,6 @@ execute if entity @s[predicate=!tac:holding_chair_deco,predicate=!tac:sneaking] 
 execute if entity @s[predicate=!tac:holding_furniture_hammer,predicate=tac:sneaking] as @e[distance=0..30,tag=chk.chair.interaction,nbt={interaction:{}}] run data remove entity @s interaction
 execute if entity @s[predicate=tac:holding_furniture_hammer,predicate=!tac:sneaking] as @e[distance=0..30,tag=chk.chair.interaction,nbt={interaction:{}}] run data remove entity @s interaction
 
-
-
 advancement revoke @s from tac:interactions/chair/rclick
 
 

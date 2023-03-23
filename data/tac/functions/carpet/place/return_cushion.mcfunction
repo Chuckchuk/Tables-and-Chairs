@@ -1,16 +1,16 @@
-execute if score @s chk.carpet_color matches 0 run give @p[predicate=tac:holding_carpet] white_carpet
-execute if score @s chk.carpet_color matches 1 run give @p[predicate=tac:holding_carpet] orange_carpet
-execute if score @s chk.carpet_color matches 2 run give @p[predicate=tac:holding_carpet] magenta_carpet
-execute if score @s chk.carpet_color matches 3 run give @p[predicate=tac:holding_carpet] light_blue_carpet
-execute if score @s chk.carpet_color matches 4 run give @p[predicate=tac:holding_carpet] yellow_carpet
-execute if score @s chk.carpet_color matches 5 run give @p[predicate=tac:holding_carpet] lime_carpet
-execute if score @s chk.carpet_color matches 6 run give @p[predicate=tac:holding_carpet] pink_carpet
-execute if score @s chk.carpet_color matches 7 run give @p[predicate=tac:holding_carpet] gray_carpet
-execute if score @s chk.carpet_color matches 8 run give @p[predicate=tac:holding_carpet] light_gray_carpet
-execute if score @s chk.carpet_color matches 9 run give @p[predicate=tac:holding_carpet] cyan_carpet
-execute if score @s chk.carpet_color matches 10 run give @p[predicate=tac:holding_carpet] purple_carpet
-execute if score @s chk.carpet_color matches 11 run give @p[predicate=tac:holding_carpet] blue_carpet
-execute if score @s chk.carpet_color matches 12 run give @p[predicate=tac:holding_carpet] brown_carpet
-execute if score @s chk.carpet_color matches 13 run give @p[predicate=tac:holding_carpet] green_carpet
-execute if score @s chk.carpet_color matches 14 run give @p[predicate=tac:holding_carpet] red_carpet
-execute if score @s chk.carpet_color matches 15 run give @p[predicate=tac:holding_carpet] black_carpet
+execute if score @s chk.carpet_color matches 0 run give @p[predicate=tac:holding_carpet, gamemode=!creative] white_carpet
+execute if score @s chk.carpet_color matches 1 run give @p[predicate=tac:holding_carpet, gamemode=!creative] orange_carpet
+execute if score @s chk.carpet_color matches 2 run give @p[predicate=tac:holding_carpet, gamemode=!creative] magenta_carpet
+execute if score @s chk.carpet_color matches 3 run give @p[predicate=tac:holding_carpet, gamemode=!creative] light_blue_carpet
+execute if score @s chk.carpet_color matches 4 run give @p[predicate=tac:holding_carpet, gamemode=!creative] yellow_carpet
+execute if score @s chk.carpet_color matches 5 run give @p[predicate=tac:holding_carpet, gamemode=!creative] lime_carpet
+execute if score @s chk.carpet_color matches 6 run give @p[predicate=tac:holding_carpet, gamemode=!creative] pink_carpet
+execute if score @s chk.carpet_color matches 7 run give @p[predicate=tac:holding_carpet, gamemode=!creative] gray_carpet
+execute if score @s chk.carpet_color matches 8 run give @p[predicate=tac:holding_carpet, gamemode=!creative] light_gray_carpet
+execute if score @s chk.carpet_color matches 9 run give @p[predicate=tac:holding_carpet, gamemode=!creative] cyan_carpet
+execute if score @s chk.carpet_color matches 10 run give @p[predicate=tac:holding_carpet, gamemode=!creative] purple_carpet
+execute if score @s chk.carpet_color matches 11 run give @p[predicate=tac:holding_carpet, gamemode=!creative] blue_carpet
+execute if score @s chk.carpet_color matches 12 run give @p[predicate=tac:holding_carpet, gamemode=!creative] brown_carpet
+execute if score @s chk.carpet_color matches 13 run give @p[predicate=tac:holding_carpet, gamemode=!creative] green_carpet
+execute if score @s chk.carpet_color matches 14 run give @p[predicate=tac:holding_carpet, gamemode=!creative] red_carpet
+execute if score @s chk.carpet_color matches 15 run give @p[predicate=tac:holding_carpet, gamemode=!creative] black_carpet

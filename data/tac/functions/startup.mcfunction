@@ -16,8 +16,8 @@ execute as @a run function tac:table/place/revoke
 
 ######## Scoreboards Remove ###########
 scoreboard objectives remove chk.fail
-scoreboard objectives remove chk.type
-scoreboard objectives remove chk.style
+# scoreboard objectives remove chk.type
+# scoreboard objectives remove chk.style
 
 ########## Recipes Remove ############
 #Hammer
@@ -26,8 +26,6 @@ recipe take @a tac:items/furniture_hammer
 #Sawmill
 advancement revoke @a from tac:recipe/block/sawmill
 recipe take @a tac:block/sawmill
-
-
 
 
 #####################################
@@ -135,7 +133,6 @@ scoreboard players set Carpet_Throne_2 chk.style 120
 
 
 
-
 #####################################
 ###########   TEAMS   ###############
 #####################################
@@ -176,3 +173,5 @@ execute unless entity @e[tag=chk.pigchair,tag=!tac.V5.0] if entity @e[type=armor
 execute if entity @e[type=pig,tag=chk.pigchair,tag=!tac.V5.0     ] at @a run say Found Old Chair Blocks, run "/function tac:update" to update nearby blocks to V5.0
 execute if entity @e[type=armor_stand,tag=chk.table,tag=!tac.V5.0] at @a run say Found Old Table Blocks, run "/function tac:update" to update nearby blocks to V5.0
 
+# Revoke Advancements just in Case
+advancement revoke @a from tac:interactions/table/interacted_with_trapdoor

@@ -1,0 +1,10 @@
+{
+	"values": [
+		"torch",
+    "redstone_torch",
+    "soul_torch",
+    "lantern",
+    "soul_lantern",
+    "end_rod"
+	]
+}

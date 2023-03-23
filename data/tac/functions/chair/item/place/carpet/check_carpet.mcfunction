@@ -7,7 +7,7 @@ execute unless score @s chk.carpet_color matches 0.. at @s positioned ~ ~0.3 ~ a
 
 #execute at @s positioned ~ ~0.3 ~ as @e[tag=chk.chair.model,distance=0..0.4] at @s run data modify entity @e[limit=1,distance=0..0.4,tag=chk.chair.cushion] Rotation set from entity @s Rotation
 # If it DOES have a Carpet, return the old one.
-execute if score @s chk.carpet_color matches 0.. run function tac:chair/item/place/return_item
+execute if score @s chk.carpet_color matches 0.. run function tac:chair/item/place/carpet/return_carpet
 
 execute if entity @p[distance=0..0.1,nbt={SelectedItem:{id:"minecraft:white_carpet"     }}] run scoreboard players set @s chk.carpet_color 0
 execute if entity @p[distance=0..0.1,nbt={SelectedItem:{id:"minecraft:orange_carpet"    }}] run scoreboard players set @s chk.carpet_color 1
@@ -26,10 +26,11 @@ execute if entity @p[distance=0..0.1,nbt={SelectedItem:{id:"minecraft:green_carp
 execute if entity @p[distance=0..0.1,nbt={SelectedItem:{id:"minecraft:red_carpet"       }}] run scoreboard players set @s chk.carpet_color 14
 execute if entity @p[distance=0..0.1,nbt={SelectedItem:{id:"minecraft:black_carpet"     }}] run scoreboard players set @s chk.carpet_color 15
 
-function tac:chair/item/place/carpet/detract_item
+function tac:chair/item/place/carpet/detract_carpet
 
 execute at @s positioned ~ ~0.3 ~ as @e[tag=chk.chair.model,distance=0..0.4] at @s run function tac:chair/item/place/carpet/get_style
 
 data remove entity @s interaction
 
-# tag @s add chk.carpeted
+# Playsound
+execute at @s run playsound minecraft:block.wool.place block @a[distance=0..8] ~ ~ ~ 1 0.85
