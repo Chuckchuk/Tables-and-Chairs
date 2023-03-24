@@ -3,6 +3,14 @@
 #Display Message:
 #tellraw @a {"text":"Successfully loaded: ","color":"yellow","extra":[{"text":"Interactive Tables and Chairs V4.0.0!","color":"blue","bold":false,"italic":false,"underlined":false},{"text":" by ","color":"yellow"},{"text":"Chuckchuk","color":"red","bold":false},{"text":".","color":"yellow"}]}
 
+# Chuckchuk COMPATIBILITY
+# Remove all my pack's installs
+scoreboard objectives remove chk.installs
+scoreboard objectives add chk.installs dummy
+schedule function tac:delayed_startup 1t
+
+
+
 #Run the Config (recipe list) for the Sawmill
 function tac:sawmill/config
 function sawmill:core/load
@@ -16,6 +24,10 @@ execute as @a run function tac:table/place/revoke
 
 ######## Scoreboards Remove ###########
 scoreboard objectives remove chk.fail
+scoreboard objectives remove chk.chairhurt
+scoreboard objectives remove chk.hurt_time
+
+
 # scoreboard objectives remove chk.type
 # scoreboard objectives remove chk.style
 
@@ -45,7 +57,7 @@ scoreboard objectives add tac.config dummy
 #Other
 scoreboard objectives add chk.distance dummy
 scoreboard objectives add chk.fail dummy
-scoreboard objectives add chk.chairhurt dummy
+scoreboard objectives add chk.hurt_time dummy
 scoreboard objectives add chk.carpet_color dummy
 #Table Cycler
 scoreboard objectives add chk.cycle dummy

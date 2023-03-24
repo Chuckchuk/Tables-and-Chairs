@@ -22,11 +22,11 @@ execute if entity @s[nbt={SelectedItem:{id:"minecraft:feather"}}] as @e[distance
 
 #Light Sources
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:torch"}}] if block ~ ~0.5 ~ air run function tac:table/item/place/block/torch
-# execute if entity @s[nbt={SelectedItem:{id:"minecraft:redstone_torch"}}] if block ~ ~0.5 ~ air run function tac:table/item/place/block/redstone_torch
-# execute if entity @s[nbt={SelectedItem:{id:"minecraft:soul_torch"}}] if block ~ ~0.5 ~ air run function tac:table/item/place/block/soul_torch
-# execute if entity @s[nbt={SelectedItem:{id:"minecraft:lantern"}}] if block ~ ~0.5 ~ air run function tac:table/item/place/block/lantern
-# execute if entity @s[nbt={SelectedItem:{id:"minecraft:soul_lantern"}}] if block ~ ~0.5 ~ air run function tac:table/item/place/block/soul_lantern
-# execute if entity @s[nbt={SelectedItem:{id:"minecraft:end_rod"}}] if block ~ ~0.5 ~ air run function tac:table/item/place/block/end_rod
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:redstone_torch"}}] if block ~ ~0.5 ~ air run function tac:table/item/place/block/redstone_torch
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:soul_torch"}}] if block ~ ~0.5 ~ air run function tac:table/item/place/block/soul_torch
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:lantern"}}] if block ~ ~0.5 ~ air run function tac:table/item/place/block/lantern
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:soul_lantern"}}] if block ~ ~0.5 ~ air run function tac:table/item/place/block/soul_lantern
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:end_rod"}}] if block ~ ~0.5 ~ air run function tac:table/item/place/block/end_rod
 
 #Item Frame
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:item_frame"}}] positioned ~ ~0.5 ~ unless entity @e[distance=0..0.4,tag=chk.table.item_frame] unless entity @e[distance=0..0.4,tag=chk.table.item.trophy] run function tac:table/item/place/item_frame

@@ -2,6 +2,7 @@
 ########Scoreboards Remove###########
 scoreboard objectives remove chk.carpet_color
 scoreboard objectives remove chk.chairhurt
+scoreboard objectives remove chk.hurt_time
 scoreboard objectives remove tac.config
 scoreboard objectives remove chk.cycle
 scoreboard objectives remove chk.style
