@@ -2,7 +2,7 @@
 function tac:table/item/remove/return_block
 
 # Setblock
-setblock ~ ~ ~ end_rod
+setblock ~ ~ ~ brewing_stand
 
 # Detract the Item from Player's Inventory
 function tac:table/item/place/block/detract_item
