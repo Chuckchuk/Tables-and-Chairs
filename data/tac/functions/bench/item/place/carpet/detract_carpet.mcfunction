@@ -1,1 +1,0 @@
-item modify entity @p[distance=0..0.1,predicate=tac:holding_carpet,gamemode=!creative] weapon.mainhand tac:detract

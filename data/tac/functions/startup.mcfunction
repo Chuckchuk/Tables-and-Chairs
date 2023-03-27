@@ -94,13 +94,6 @@ scoreboard players set diamondChair chk.type 1072
 scoreboard players set netheriteChair chk.type 1073
 scoreboard players set copperChair chk.type 1074
 
-#Scoreboard Enum: Bench Type
-scoreboard players set Bench.oak chk.type 0
-scoreboard players set Bench.spruce chk.type 5
-scoreboard players set Bench.birch chk.type 10
-scoreboard players set Bench.jungle chk.type 15
-scoreboard players set Bench.acacia chk.type 20
-scoreboard players set Bench.dark_oak chk.type 25
 
 
 #Scoreboard Enum: Table Type
@@ -135,9 +128,6 @@ scoreboard players set Chair_Fancy_1 chk.style 200
 scoreboard players set Chair_Fancy_2 chk.style 250
 scoreboard players set Chair_Throne chk.style 300
 
-# Scoreboard Enum: Bench Style
-scoreboard players set Bench.basic chk.style 00
-
 #Scoreboard Enum: Table Style
 scoreboard players set Table_Basic_1 chk.style 0
 scoreboard players set Table_Basic_2 chk.style 10
@@ -151,16 +141,8 @@ scoreboard players set Carpet_Armchair_2 chk.style 60
 scoreboard players set Carpet_Throne_1 chk.style 100
 scoreboard players set Carpet_Throne_2 chk.style 120
 
-scoreboard players set Carpet.Bench.basic chk.style 200
 
 
-
-####################################
-###########   DATA   ###############
-####################################
-
-scoreboard players set num1 chk.data 1
-scoreboard players set num10000 chk.data 10000
 
 
 #####################################
@@ -204,11 +186,4 @@ execute if entity @e[type=pig,tag=chk.pigchair,tag=!tac.V5.0     ] at @a run say
 execute if entity @e[type=armor_stand,tag=chk.table,tag=!tac.V5.0] at @a run say Found Old Table Blocks, run "/function tac:update" to update nearby blocks to V5.0
 
 # Revoke Advancements just in Case
-advancement revoke @a from tac:interactions/bench/lclick
-advancement revoke @a from tac:interactions/bench/rclick
-advancement revoke @a from tac:interactions/chair/lclick
-advancement revoke @a from tac:interactions/chair/rclick
-advancement revoke @a from tac:interactions/table/lclick
-advancement revoke @a from tac:interactions/table/rclick
-
 advancement revoke @a from tac:interactions/table/interacted_with_trapdoor

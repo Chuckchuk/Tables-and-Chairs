@@ -26,13 +26,7 @@ execute if entity @s[nbt={SelectedItem:{id:"minecraft:redstone_torch"}}] if bloc
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:soul_torch"}}] if block ~ ~0.5 ~ air run function tac:table/item/place/block/soul_torch
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:lantern"}}] if block ~ ~0.5 ~ air run function tac:table/item/place/block/lantern
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:soul_lantern"}}] if block ~ ~0.5 ~ air run function tac:table/item/place/block/soul_lantern
-
-
-#Other Blocks
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:end_rod"}}] positioned ~ ~0.5 ~ unless block ~ ~ ~ end_rod if block ~ ~ ~ #tac:table_block run function tac:table/item/place/block/end_rod
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:flower_pot"}}] positioned ~ ~0.5 ~ unless block ~ ~ ~ #minecraft:flower_pots if block ~ ~ ~ #tac:table_block run function tac:table/item/place/block/flower_pot
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:brewing_stand"}}] positioned ~ ~0.5 ~ unless block ~ ~ ~ brewing_stand if block ~ ~ ~ #tac:table_block run function tac:table/item/place/block/brewing_stand
-
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:end_rod"}}] if block ~ ~0.5 ~ air run function tac:table/item/place/block/end_rod
 
 #Item Frame
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:item_frame"}}] positioned ~ ~0.5 ~ unless entity @e[distance=0..0.4,tag=chk.table.item_frame] unless entity @e[distance=0..0.4,tag=chk.table.item.trophy] run function tac:table/item/place/item_frame

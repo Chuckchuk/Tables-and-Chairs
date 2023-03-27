@@ -12,5 +12,3 @@ execute if entity @s[predicate=tac:holding_furniture_hammer] as @e[distance=0..0
 tag @a[distance=0..12.5,tag=chk.table.interacting_with] remove chk.table.interacting_with
 
 function tac:table/reset_trapdoor
-
-tag @e[tag=chk.temp.open_trapdoor_table] remove chk.temp.open_trapdoor_table
