@@ -22,7 +22,7 @@ execute as @s[scores={chk.hurt_time=..0}] run scoreboard players reset @s chk.hu
 #   2. Add the Enum in                function/startup
 #   3. Add to                         function/chair/place/place_chair
 #   4. Add the Type                   function/chair/place/type/<TYPE>
-#   5. Add the Loot Table             loot_tables/chair/<MATERIAL>/<TYPE>
+#   5. Add the Loot Table             loot_tables/chair/<TYPE>/<STYLE>
 #   6. Add the Removal                function/chair/remove/drop_chair
 ########################################################################################
 

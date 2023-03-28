@@ -14,5 +14,5 @@
 			"trigger": "minecraft:tick"
 		}
 	},
-	"parent": "tac:tables_chairs"
+	"parent": "chuckchuk:chuckchuk"
 }

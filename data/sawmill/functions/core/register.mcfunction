@@ -5,7 +5,7 @@ execute unless score #display_row tac.io matches 0..2 run scoreboard players set
 execute unless score #material_cost tac.io matches 1.. run scoreboard players set #material_cost tac.io 1
 
 # Get input container
-data modify storage sawmill:temp _items set from block 0 0 0 Items 
+data modify storage sawmill:temp _items set from block -29999983 -64 14400 Items 
 
 
 # Append recipe
@@ -34,4 +34,4 @@ data modify storage sawmill:data recipes[-1].display.Count set value 1b
 scoreboard players reset #display_row tac.io
 scoreboard players reset #material_cost tac.io
 data remove storage sawmill:temp _items
-data remove block 0 0 0 Items
+data remove block -29999983 -64 14400 Items

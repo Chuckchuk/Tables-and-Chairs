@@ -1,5 +1,8 @@
-#Setblock
-setblock ~ ~0.5 ~ end_rod
+# Remove the Current Block and Summon the Item
+function tac:table/item/remove/return_block
 
+# Setblock
+setblock ~ ~ ~ end_rod
+
+# Detract the Item from Player's Inventory
 function tac:table/item/place/block/detract_item
-# clear @p[nbt={SelectedItem:{id:"minecraft:end_rod"}},distance=0..6,gamemode=!creative] end_rod 1

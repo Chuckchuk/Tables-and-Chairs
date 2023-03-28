@@ -1,7 +1,15 @@
-#> sawmill:core/tick
+#> sawmill:tick
 
-# As sawmills
-# execute as @s[type=item_display] at @s positioned ~ ~-0.5 ~ run function sawmill:block/sawmill/tick
-# execute as @s[type=armor_stand ] at @s positioned ~ ~ ~ run function sawmill:block/sawmill/tick
+# Block destroyed
+#execute unless block ~ ~ ~ barrel align xyz positioned ~0.5 ~0.5 ~0.5 run function sawmill:destroyed
 
-# execute as @e[type=item_display,tag=tac.sawmill] at @s positioned ~ ~-0.5 ~ run function sawmill:block/sawmill/tick
+# Lock hoppers
+execute if block ~ ~ ~-1 hopper run data modify block ~ ~ ~-1 TransferCooldown set value 10
+execute if block ~ ~ ~1 hopper run data modify block ~ ~ ~1 TransferCooldown set value 10
+execute if block ~1 ~ ~ hopper run data modify block ~1 ~ ~ TransferCooldown set value 10
+execute if block ~-1 ~ ~ hopper run data modify block ~-1 ~ ~ TransferCooldown set value 10
+execute if block ~ ~1 ~ hopper run data modify block ~ ~1 ~ TransferCooldown set value 10
+execute if block ~ ~-1 ~ hopper run data modify block ~ ~-1 ~ TransferCooldown set value 10
+
+# Operate GUI if barrel is open
+execute if block ~ ~ ~ barrel[open=true] run function sawmill:gui/main
