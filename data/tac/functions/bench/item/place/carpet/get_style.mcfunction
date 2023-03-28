@@ -1,7 +1,7 @@
 # Get Style
 # Normal Cushion
 execute if entity @s[tag=chk.bench.basic] run scoreboard players set Current_Carpet chk.temp 000
-execute if entity @s[tag=chk.bench.couch.1] run scoreboard players set Current_Carpet chk.temp 100
+execute if entity @s[tag=chk.bench.couch.1] run scoreboard players set Current_Carpet chk.temp 1000
 
 
 

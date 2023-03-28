@@ -155,7 +155,7 @@ scoreboard players set Carpet_Throne_1 chk.style 100
 scoreboard players set Carpet_Throne_2 chk.style 120
 
 scoreboard players set Carpet.Bench.basic chk.style 00
-scoreboard players set Carpet.Bench.basic chk.style 100
+scoreboard players set Carpet.Bench.couch chk.style 1000
 
 
 

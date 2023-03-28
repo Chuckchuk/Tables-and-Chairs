@@ -1,7 +1,7 @@
 {
 	"display": {
 		"title": "Tables and Chairs",
-		"description": "V5.1.0",
+		"description": "V5.1.1",
 		"icon": {
 			"item": "minecraft:jungle_trapdoor",
 			"nbt": "{CustomModelData: 9001000}"
