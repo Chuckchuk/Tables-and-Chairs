@@ -15,5 +15,5 @@ execute if score Tables_and_Chairs chk.installs matches 1.. run function sawmill
 ## First Clocks, then Benches
 ##! IF TAC
 ## Benches, and Throne
-execute if score Tables_and_Chairs chk.installs matches 1.. run function sawmill:recipes/clk/2/cherry
+execute if score Clocks_and_Fancitries chk.installs matches 1.. run function sawmill:recipes/clk/2/cherry
 execute if score Tables_and_Chairs chk.installs matches 1.. run function sawmill:recipes/tac/2/cherry
