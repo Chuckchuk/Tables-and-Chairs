@@ -14,5 +14,5 @@
 			"trigger": "minecraft:tick"
 		}
 	},
-	"parent": "chuckchuk:chuckchuk"
+	"parent": "global:chuckchuk"
 }

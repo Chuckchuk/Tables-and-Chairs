@@ -1,7 +1,8 @@
 {
 	"display": {
-		"title": "Chuckchuk",
+		"title": "Datapacks by Chuckchuk",
 		"description": "",
+    "frame": "challenge",
 		"icon": {
 			"item": "minecraft:player_head",
 			"nbt": "{SkullOwner: \"Chuckchuk\"}"
