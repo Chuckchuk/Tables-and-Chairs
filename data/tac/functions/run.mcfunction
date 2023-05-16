@@ -3,8 +3,8 @@
 #########################
 # Run Chairs
 ## V5.0
-execute as @e[tag=chk.chair.interaction] at @s if entity @p[distance=0..8] run function tac:chair/run_chair
-execute as @e[tag=chk.bench.interaction] at @s if entity @p[distance=0..8] run function tac:bench/run_bench
+execute as @e[type=item_display,tag=chk.chair.interaction] at @s if entity @p[distance=0..8] run function tac:chair/run_chair
+execute as @e[type=item_display,tag=chk.bench.interaction] at @s if entity @p[distance=0..8] run function tac:bench/run_bench
 
 #Run Tables
 # execute at @a as @e[distance=0..8.5,type=item_display,tag=chk.table] at @s run function tac:table/run_table

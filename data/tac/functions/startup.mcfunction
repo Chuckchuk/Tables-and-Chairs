@@ -62,8 +62,10 @@ scoreboard objectives add chk.cycle dummy
 scoreboard objectives add chk.start_model dummy
 
 
-#Scoreboard Enum: Chair Type
+## ADD the Type Scoreboard
 scoreboard objectives add chk.type dummy
+
+#Scoreboard Enum: Chair Type
 scoreboard players reset @a chk.type
 scoreboard players set oakChair chk.type 1000
 scoreboard players set spruceChair chk.type 1001
@@ -128,34 +130,36 @@ scoreboard players set obsidianTable chk.type 5000
 scoreboard players set quartzTable chk.type 5100
 scoreboard players set blackstoneTable chk.type 5200
 
-#Scoreboard Enum: Chair Style
+## ADD the Style Scoreboard
 scoreboard objectives add chk.style dummy
-scoreboard players set Chair_Basic chk.style 000
-scoreboard players set Chair_Simple chk.style 050
-scoreboard players set Chair_Carved chk.style 100
-scoreboard players set Chair_Fancy_1 chk.style 200
-scoreboard players set Chair_Fancy_2 chk.style 250
-scoreboard players set Chair_Throne chk.style 300
+
+# Scoreboard Enum: Chair Style
+scoreboard players set Chair.style.basic chk.style 000
+scoreboard players set Chair.style.simple chk.style 050
+scoreboard players set Chair.style.carved chk.style 100
+scoreboard players set Chair.style.armchair.1 chk.style 200
+scoreboard players set Chair.style.armchair.2 chk.style 250
+scoreboard players set Chair.style.throne chk.style 300
 
 # Scoreboard Enum: Bench Style
-scoreboard players set Bench.basic chk.style 00
-scoreboard players set Bench.couch chk.style 150
+scoreboard players set Bench.style.basic chk.style 00
+scoreboard players set Bench.style.couch chk.style 150
 
 #Scoreboard Enum: Table Style
-scoreboard players set Table_Basic_1 chk.style 0
-scoreboard players set Table_Basic_2 chk.style 10
-scoreboard players set Table_Carved_1 chk.style 20
-scoreboard players set Table_Carved_2 chk.style 30
+scoreboard players set Table.style.basic.1 chk.style 0
+scoreboard players set Table.style.basic.2 chk.style 10
+scoreboard players set Table.style.carved.1 chk.style 20
+scoreboard players set Table.style.carved.2 chk.style 30
 
 #Scoreboard Enum: Carpet Style
-scoreboard players set Carpet_Normal chk.style 20
-scoreboard players set Carpet_Armchair_1 chk.style 40
-scoreboard players set Carpet_Armchair_2 chk.style 60
-scoreboard players set Carpet_Throne_1 chk.style 100
-scoreboard players set Carpet_Throne_2 chk.style 120
+scoreboard players set Carpet.Chair.style.normal chk.style 20
+scoreboard players set Carpet.Chair.style.armchair.1 chk.style 40
+scoreboard players set Carpet.Chair.style.armchair.2 chk.style 60
+scoreboard players set Carpet.Chair.style.throne.1 chk.style 100
+scoreboard players set Carpet.Chair.style.throne.2 chk.style 120
 
-scoreboard players set Carpet.Bench.basic chk.style 00
-scoreboard players set Carpet.Bench.couch chk.style 1000
+scoreboard players set Carpet.Bench.style.basic chk.style 00
+scoreboard players set Carpet.Bench.style.couch chk.style 1000
 
 
 

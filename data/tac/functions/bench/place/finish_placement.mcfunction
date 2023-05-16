@@ -1,7 +1,7 @@
 
 # Set Tag for Style
-execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Bench.basic chk.style run tag @s add chk.bench.basic
-execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Bench.couch chk.style run tag @s add chk.bench.couch.1
+execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Bench.style.basic chk.style run tag @s add chk.bench.basic
+execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Bench.style.couch chk.style run tag @s add chk.bench.couch.1
 
 
 # Set to the Correct Style and Type 

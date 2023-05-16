@@ -15,5 +15,5 @@ execute if entity @s[tag=chk.bench.crimson] run scoreboard players operation Cur
 execute if entity @s[tag=chk.bench.warped] run scoreboard players operation Current_Bench chk.temp += Bench.warped chk.type
 
 # Style
-execute if entity @s[tag=chk.bench.basic] run scoreboard players operation Current_Bench chk.temp += Bench.basic chk.style
-execute if entity @s[tag=chk.bench.couch] run scoreboard players operation Current_Bench chk.temp += Bench.couch chk.style
+execute if entity @s[tag=chk.bench.basic] run scoreboard players operation Current_Bench chk.temp += Bench.style.basic chk.style
+execute if entity @s[tag=chk.bench.couch] run scoreboard players operation Current_Bench chk.temp += Bench.style.couch chk.style

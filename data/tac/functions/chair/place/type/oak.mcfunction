@@ -13,27 +13,27 @@ function tac:chair/place/finish_placement
 ## V5.0
 
 # # Basic
-# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair_Basic chk.style run data modify entity @s ArmorItems[3] set value {tag:{CustomModelData:9001000},id:"minecraft:jungle_trapdoor",Count:1b}
-# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair_Basic chk.style run tag @s add chk.chair.basic
+# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair.style.basic chk.style run data modify entity @s ArmorItems[3] set value {tag:{CustomModelData:9001000},id:"minecraft:jungle_trapdoor",Count:1b}
+# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair.style.basic chk.style run tag @s add chk.chair.basic
 # # Simple
-# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair_Simple chk.style run data modify entity @s ArmorItems[3] set value {tag:{CustomModelData:9001050},id:"minecraft:jungle_trapdoor",Count:1b}
-# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair_Simple chk.style run tag @s add chk.chair.simple
+# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair.style.simple chk.style run data modify entity @s ArmorItems[3] set value {tag:{CustomModelData:9001050},id:"minecraft:jungle_trapdoor",Count:1b}
+# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair.style.simple chk.style run tag @s add chk.chair.simple
 # # Carved
-# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair_Carved chk.style run data modify entity @s ArmorItems[3] set value {tag:{CustomModelData:9001100},id:"minecraft:jungle_trapdoor",Count:1b}
-# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair_Carved chk.style run tag @s add chk.chair.carved
+# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair.style.carved chk.style run data modify entity @s ArmorItems[3] set value {tag:{CustomModelData:9001100},id:"minecraft:jungle_trapdoor",Count:1b}
+# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair.style.carved chk.style run tag @s add chk.chair.carved
 # # Fancy
-# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair_Fancy_1 chk.style run data modify entity @s ArmorItems[3] set value {tag:{CustomModelData:9001200},id:"minecraft:jungle_trapdoor",Count:1b}
-# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair_Fancy_1 chk.style run tag @s add chk.chair.fancy.1
+# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair.style.armchair.1 chk.style run data modify entity @s ArmorItems[3] set value {tag:{CustomModelData:9001200},id:"minecraft:jungle_trapdoor",Count:1b}
+# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair.style.armchair.1 chk.style run tag @s add chk.chair.fancy.1
 # # Fancy 2
-# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair_Fancy_2 chk.style run data modify entity @s ArmorItems[3] set value {tag:{CustomModelData:9001250},id:"minecraft:jungle_trapdoor",Count:1b}
-# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair_Fancy_2 chk.style run tag @s add chk.chair.fancy.2
+# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair.style.armchair.2 chk.style run data modify entity @s ArmorItems[3] set value {tag:{CustomModelData:9001250},id:"minecraft:jungle_trapdoor",Count:1b}
+# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair.style.armchair.2 chk.style run tag @s add chk.chair.fancy.2
 # # Fancy 2
-# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair_Fancy_2 chk.style run data modify entity @s ArmorItems[3] set value {tag:{CustomModelData:9001250},id:"minecraft:jungle_trapdoor",Count:1b}
-# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair_Fancy_2 chk.style run tag @s add chk.chair.fancy.2
+# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair.style.armchair.2 chk.style run data modify entity @s ArmorItems[3] set value {tag:{CustomModelData:9001250},id:"minecraft:jungle_trapdoor",Count:1b}
+# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair.style.armchair.2 chk.style run tag @s add chk.chair.fancy.2
 
 # # Throne
-# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair_Throne chk.style run data modify entity @s ArmorItems[3] set value {tag:{CustomModelData:9001300},id:"minecraft:jungle_trapdoor",Count:1b}
-# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair_Throne chk.style run tag @s add chk.chair.throne
+# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair.style.throne chk.style run data modify entity @s ArmorItems[3] set value {tag:{CustomModelData:9001300},id:"minecraft:jungle_trapdoor",Count:1b}
+# execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Chair.style.throne chk.style run tag @s add chk.chair.throne
 
 # tag @s add chk.chair.oak
 

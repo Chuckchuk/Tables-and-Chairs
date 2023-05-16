@@ -4,7 +4,7 @@ data modify entity @s Rotation set from entity @e[limit=1,sort=nearest,tag=chk.b
 # Set to Starting CustomModelData
 scoreboard players set Carpet_Style chk.temp 9010000
 # Get the Style
-execute if entity @e[distance=0..0.4,tag=chk.bench.model,tag=chk.bench.basic] run scoreboard players operation Carpet_Style chk.temp += Carpet.Bench.basic chk.style
+execute if entity @e[distance=0..0.4,tag=chk.bench.model,tag=chk.bench.basic] run scoreboard players operation Carpet_Style chk.temp += Carpet.Bench.style.basic chk.style
 # tellraw @a ["","1: ",{"score":{"name":"Carpet_Style","objective":"chk.temp"},"color":"red"}]
 
 # Set the Color

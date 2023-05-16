@@ -14,8 +14,8 @@ data modify entity @s CustomName set value "\"bamboo.Table\""
 ##                                            ^^^
 
 # Set the Special Top
-execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Table_Carved_1 chk.style at @s run kill @e[distance=0..0.4,tag=chk.table.top,limit=1]
-execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Table_Carved_2 chk.style at @s run kill @e[distance=0..0.4,tag=chk.table.top,limit=1]
+execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Table.style.carved.1 chk.style at @s run kill @e[distance=0..0.4,tag=chk.table.top,limit=1]
+execute if score @p[distance=0..6,scores={chk.style=0..}] chk.style = Table.style.carved.2 chk.style at @s run kill @e[distance=0..0.4,tag=chk.table.top,limit=1]
 
 # Set The Styles and Other Details
 function tac:table/place/finish_placement
