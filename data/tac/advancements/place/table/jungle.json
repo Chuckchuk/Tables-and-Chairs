@@ -3,14 +3,19 @@
 		"place": {
 			"trigger": "minecraft:placed_block",
 			"conditions": {
-				"item": {
-					"item": "minecraft:jungle_trapdoor",
-					"nbt": "{Tags:[chk.table.jungle]}"
-				}
+				"location": [
+					{
+						"condition": "minecraft:match_tool",
+						"predicate": {
+							"item": "minecraft:jungle_trapdoor",
+							"nbt": "{Tags:[chk.table.jungle]}"
+						}
+					}
+				]
 			}
 		}
 	},
 	"rewards": {
 		"function": "tac:table/place/init"
 	}
-} 
+}

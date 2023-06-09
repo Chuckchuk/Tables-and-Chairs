@@ -3,13 +3,18 @@
 		"place": {
 			"trigger": "minecraft:placed_block",
 			"conditions": {
-				"item": {
-					"item": "minecraft:jungle_trapdoor",
-					"nbt": "{Tags:[chk.bench.acacia]}"
+				"location": [
+					{
+						"condition": "minecraft:match_tool",
+						"predicate": {
+							"item": "minecraft:jungle_trapdoor",
+							"nbt": "{Tags:[chk.bench.acacia]}"
+						}
 					}
-				}
+				]
 			}
-		},
+		}
+	},
 	"rewards": {
 		"function": "tac:bench/place/setup/init"
 	}

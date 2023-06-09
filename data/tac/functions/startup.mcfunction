@@ -34,8 +34,8 @@ scoreboard objectives remove chk.hurt_time
 advancement revoke @a from tac:recipe/items/furniture_hammer
 recipe take @a tac:items/furniture_hammer
 #Sawmill
-advancement revoke @a from tac:recipe/block/sawmill
-recipe take @a tac:block/sawmill
+advancement revoke @a from sawmill:recipe/block/sawmill
+recipe take @a sawmill:block/sawmill
 
 
 #####################################

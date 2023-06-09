@@ -3,11 +3,11 @@
 		"recipe": {
 			"trigger": "minecraft:recipe_unlocked",
 			"conditions": {
-				"recipe": "tac:block/sawmill"
+				"recipe": "sawmill:block/sawmill"
 			}
 		}
 	},
 	"rewards": {
-		"function": "tac:recipes/block/sawmill"
+		"function": "sawmill:recipes/block/sawmill"
 	}
 }

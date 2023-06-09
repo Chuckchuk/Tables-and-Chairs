@@ -3,13 +3,18 @@
 		"place": {
 			"trigger": "minecraft:placed_block",
 			"conditions": {
-				"item": {
-					"item": "minecraft:jungle_trapdoor",
-					"nbt": "{Tags:[chk.chair.deepslate_brick]}"
+				"location": [
+					{
+						"condition": "minecraft:match_tool",
+						"predicate": {
+							"item": "minecraft:jungle_trapdoor",
+							"nbt": "{Tags:[chk.chair.deepslate_brick]}"
+						}
 					}
-				}
+				]
 			}
-		},
+		}
+	},
 	"rewards": {
 		"function": "tac:chair/place/init"
 	}

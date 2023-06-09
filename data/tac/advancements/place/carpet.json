@@ -3,12 +3,17 @@
 		"place": {
 			"trigger": "minecraft:placed_block",
 			"conditions": {
-				"item": {
-					"tag": "tac:carpets"
+				"location": [
+					{
+						"condition": "minecraft:match_tool",
+						"predicate": {
+							"tag": "tac:carpets"
+						}
 					}
-				}
+				]
 			}
-		},
+		}
+	},
 	"rewards": {
 		"function": "tac:carpet/place/init"
 	}

@@ -3,13 +3,18 @@
 		"place": {
 			"trigger": "minecraft:placed_block",
 			"conditions": {
-				"item": {
-					"item": "minecraft:jungle_trapdoor",
-					"nbt": "{Tags:[chk.chair.fancy.1]}"
+				"location": [
+					{
+						"condition": "minecraft:match_tool",
+						"predicate": {
+							"item": "minecraft:jungle_trapdoor",
+							"nbt": "{Tags:[chk.chair.fancy.1]}"
+						}
 					}
-				}
+				]
 			}
-		},
+		}
+	},
 	"rewards": {
 		"function": "tac:chair/place/style/fancy_1"
 	}
