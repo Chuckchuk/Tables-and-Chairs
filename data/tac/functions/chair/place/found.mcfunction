@@ -15,7 +15,7 @@ execute if entity @s[y_rotation=135..225] positioned ~ ~0.4062 ~ as @e[distance=
 execute if entity @s[y_rotation=225..315] positioned ~ ~0.4062 ~ as @e[distance=0..0.1,tag=chk.chair.model] run tag @s add chk.facing.east
 
 #Summon Interaction Entity
-summon interaction ~ ~ ~ {Rotation:[0f,90f,0f],height:1.2,width:0.75,Tags:["smithed.block","chk.interaction","chk.punch_break","chk.chair","chk.chair.interaction","tac.V5.0"]}
+summon interaction ~ ~ ~ {Rotation:[0f,90f,0f],height:1.2,width:0.75,Tags:["smithed.block","chk.interaction","chk.punch_break","chk.chair","chk.chair.interaction","tac.V5.3"]}
 
 # Remove the Trapdoor
 fill ~ ~ ~ ~ ~ ~ air replace jungle_trapdoor
