@@ -212,8 +212,6 @@ execute unless entity @e[tag=chk.pigchair,tag=!tac.V5.0] if entity @e[type=armor
 execute if entity @e[type=pig,tag=chk.pigchair,tag=!tac.V5.0     ] at @a run say Found Old Chair Blocks, run "/function tac:update" to update nearby blocks to V5.0
 execute if entity @e[type=armor_stand,tag=chk.table,tag=!tac.V5.0] at @a run say Found Old Table Blocks, run "/function tac:update" to update nearby blocks to V5.0
 
-execute if entity @e[type=armor_stand,tag=chk.table,tag=!tac.V5.0] at @a run say Found Old Chairs, run "/function tac:update" to update nearby blocks to V5.3
-
 # Revoke Advancements just in Case
 advancement revoke @a from tac:interactions/bench/lclick
 advancement revoke @a from tac:interactions/bench/rclick
