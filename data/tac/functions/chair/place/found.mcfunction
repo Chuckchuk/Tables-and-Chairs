@@ -4,10 +4,10 @@ scoreboard players set @s chk.fail 0
 # tellraw @s ["","Successful Placement: Chk.Style: ",{"score":{"name":"@s","objective":"chk.style"},"color":"red"}," Chk.Type: ",{"score":{"name":"@s","objective":"chk.type"},"color":"red"}]
 
 #Summon Item Display
-execute if entity @s[y_rotation=-45..45 ] positioned ~ ~0.4062 ~ run summon item_display ~ ~ ~ {Rotation:[180f,0f],item:{id:"minecraft:jungle_trapdoor",Count:1b,tag:{CustomModelData:9000000}},item_display:head,view_range:0.67f,width:1,height:1,CustomName:"\"Chair Model\"",Tags:["chk.block","smithed.block","chk.chair","chk.chair.model","chk.not_done","tac.V5.0"]}
-execute if entity @s[y_rotation=45..135 ] positioned ~ ~0.4062 ~ run summon item_display ~ ~ ~ {Rotation:[270f,0f],item:{id:"minecraft:jungle_trapdoor",Count:1b,tag:{CustomModelData:9000000}},item_display:head,view_range:0.67f,width:1,height:1,CustomName:"\"Chair Model\"",Tags:["chk.block","smithed.block","chk.chair","chk.chair.model","chk.not_done","tac.V5.0"]}
-execute if entity @s[y_rotation=135..225] positioned ~ ~0.4062 ~ run summon item_display ~ ~ ~ {Rotation:[0f,  0f],item:{id:"minecraft:jungle_trapdoor",Count:1b,tag:{CustomModelData:9000000}},item_display:head,view_range:0.67f,width:1,height:1,CustomName:"\"Chair Model\"",Tags:["chk.block","smithed.block","chk.chair","chk.chair.model","chk.not_done","tac.V5.0"]}
-execute if entity @s[y_rotation=225..315] positioned ~ ~0.4062 ~ run summon item_display ~ ~ ~ {Rotation:[90f, 0f],item:{id:"minecraft:jungle_trapdoor",Count:1b,tag:{CustomModelData:9000000}},item_display:head,view_range:0.67f,width:1,height:1,CustomName:"\"Chair Model\"",Tags:["chk.block","smithed.block","chk.chair","chk.chair.model","chk.not_done","tac.V5.0"]}
+execute if entity @s[y_rotation=-45..45 ] positioned ~ ~0.4062 ~ run summon item_display ~ ~ ~ {Rotation:[180f,0f],item:{id:"minecraft:jungle_trapdoor",Count:1b,tag:{CustomModelData:9000000}},item_display:head,view_range:0.67f,width:1,height:1,Tags:["chk.block","smithed.block","chk.chair","chk.chair.model","chk.not_done","tac.V5.0"]}
+execute if entity @s[y_rotation=45..135 ] positioned ~ ~0.4062 ~ run summon item_display ~ ~ ~ {Rotation:[270f,0f],item:{id:"minecraft:jungle_trapdoor",Count:1b,tag:{CustomModelData:9000000}},item_display:head,view_range:0.67f,width:1,height:1,Tags:["chk.block","smithed.block","chk.chair","chk.chair.model","chk.not_done","tac.V5.0"]}
+execute if entity @s[y_rotation=135..225] positioned ~ ~0.4062 ~ run summon item_display ~ ~ ~ {Rotation:[0f,  0f],item:{id:"minecraft:jungle_trapdoor",Count:1b,tag:{CustomModelData:9000000}},item_display:head,view_range:0.67f,width:1,height:1,Tags:["chk.block","smithed.block","chk.chair","chk.chair.model","chk.not_done","tac.V5.0"]}
+execute if entity @s[y_rotation=225..315] positioned ~ ~0.4062 ~ run summon item_display ~ ~ ~ {Rotation:[90f, 0f],item:{id:"minecraft:jungle_trapdoor",Count:1b,tag:{CustomModelData:9000000}},item_display:head,view_range:0.67f,width:1,height:1,Tags:["chk.block","smithed.block","chk.chair","chk.chair.model","chk.not_done","tac.V5.0"]}
 #Give The Display a "Facing" Tag
 execute if entity @s[y_rotation=-45..45 ] positioned ~ ~0.4062 ~ as @e[distance=0..0.1,tag=chk.chair.model] run tag @s add chk.facing.south
 execute if entity @s[y_rotation=45..135 ] positioned ~ ~0.4062 ~ as @e[distance=0..0.1,tag=chk.chair.model] run tag @s add chk.facing.west
@@ -15,7 +15,7 @@ execute if entity @s[y_rotation=135..225] positioned ~ ~0.4062 ~ as @e[distance=
 execute if entity @s[y_rotation=225..315] positioned ~ ~0.4062 ~ as @e[distance=0..0.1,tag=chk.chair.model] run tag @s add chk.facing.east
 
 #Summon Interaction Entity
-summon interaction ~ ~ ~ {CustomName:"\"Chair Interaction\"",Rotation:[0f,90f,0f],height:1.2,width:0.75,Tags:["smithed.block","chk.interaction","chk.punch_break","chk.chair","chk.chair.interaction","tac.V5.0"]}
+summon interaction ~ ~ ~ {Rotation:[0f,90f,0f],height:1.2,width:0.75,Tags:["smithed.block","chk.interaction","chk.punch_break","chk.chair","chk.chair.interaction","tac.V5.0"]}
 
 # Remove the Trapdoor
 fill ~ ~ ~ ~ ~ ~ air replace jungle_trapdoor
