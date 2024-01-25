@@ -2,7 +2,7 @@ kill @e[distance=0..4,nbt={Item:{tag:{Tags:["chk.gui"]}}}]
 kill @e[distance=0..4,nbt={Item:{id:"minecraft:barrel"}},limit=1,sort=nearest]
 
 # Drop the sawmill Item
-loot spawn ~ ~ ~ loot tac:sawmill
+loot spawn ~ ~ ~ loot sawmill:sawmill
 
 # Kill dropped placeholder items
 kill @e[type=item,nbt={Item:{tag:{lockedSlot:1b}}}]
