@@ -206,11 +206,18 @@ scoreboard players set configINIT tac.config 1
 # Run Bits and Bobs
 #function bab:startup
 
-execute if entity @e[type=pig,tag=chk.pigchair,tag=!tac.V5.0] as @a at @s run function tac:update
-execute unless entity @e[tag=chk.pigchair,tag=!tac.V5.0] if entity @e[type=armor_stand,tag=chk.table,tag=!tac.V5.0] as @a at @s run function tac:update
+#NOTE: update to get rid of nametags.
+execute if entity @e[type=interaction,tag=chk.interaction,tag=!tac.V5.3] at @a run say Found Old Chairs, run "/function tac:update" to update nearby blocks to V5.3
 
-execute if entity @e[type=pig,tag=chk.pigchair,tag=!tac.V5.0     ] at @a run say Found Old Chair Blocks, run "/function tac:update" to update nearby blocks to V5.0
-execute if entity @e[type=armor_stand,tag=chk.table,tag=!tac.V5.0] at @a run say Found Old Table Blocks, run "/function tac:update" to update nearby blocks to V5.0
+
+#-- 5.0 CONVERSION IS NOW DISABLED.
+
+#execute if entity @e[type=pig,tag=chk.pigchair,tag=!tac.V5.0] as @a at @s run function tac:update
+#execute unless entity @e[tag=chk.pigchair,tag=!tac.V5.0] if entity @e[type=armor_stand,tag=chk.table,tag=!tac.V5.0] as @a at @s run function tac:update
+
+#execute if entity @e[type=pig,tag=chk.pigchair,tag=!tac.V5.0     ] at @a run say Found Old Chair Blocks, run "/function tac:update" to update nearby blocks to V5.0
+#execute if entity @e[type=armor_stand,tag=chk.table,tag=!tac.V5.0] at @a run say Found Old Table Blocks, run "/function tac:update" to update nearby blocks to V5.0
+
 
 # Revoke Advancements just in Case
 advancement revoke @a from tac:interactions/bench/lclick

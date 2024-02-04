@@ -6,11 +6,11 @@ execute at @s if block ~ ~ ~ #minecraft:trapdoors[facing=west] run setblock ~ ~ 
 ##                                                                                ^^^
 
 # Tag the Table
-tag @s add chk.table.oak
+tag @s add chk.table.obsidian
 ##                   ^^^
 
 # Set the Custom Name
-data modify entity @s CustomName set value "\"oak.Table\""
+data modify entity @s CustomName set value "\"obsidian.Table\""
 ##                                            ^^^
 
 # Set The Styles and Other Details

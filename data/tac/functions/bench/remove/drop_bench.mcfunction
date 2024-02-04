@@ -8,7 +8,7 @@ execute if entity @s[tag=chk.bench.basic,tag=chk.bench.jungle] at @s run loot sp
 execute if entity @s[tag=chk.bench.basic,tag=chk.bench.acacia] at @s run loot spawn ~ ~ ~ loot tac:bench/basic/acacia
 execute if entity @s[tag=chk.bench.basic,tag=chk.bench.dark_oak] at @s run loot spawn ~ ~ ~ loot tac:bench/basic/dark_oak
 execute if entity @s[tag=chk.bench.basic,tag=chk.bench.crimson] at @s run loot spawn ~ ~ ~ loot tac:bench/basic/crimson
-execute if entity @s[tag=chk.bench.basic,tag=chk.bench.warped] at @s run loot spawn ~ ~ ~ loot tac:benchbasic//warped
+execute if entity @s[tag=chk.bench.basic,tag=chk.bench.warped] at @s run loot spawn ~ ~ ~ loot tac:bench/basic/warped
 execute if entity @s[tag=chk.bench.basic,tag=chk.bench.mangrove] at @s run loot spawn ~ ~ ~ loot tac:bench/basic/mangrove
 execute if entity @s[tag=chk.bench.basic,tag=chk.bench.cherry] at @s run loot spawn ~ ~ ~ loot tac:bench/basic/cherry
 execute if entity @s[tag=chk.bench.basic,tag=chk.bench.bamboo] at @s run loot spawn ~ ~ ~ loot tac:bench/basic/bamboo

@@ -29,6 +29,9 @@ execute if score #slot tac.temp matches 26 run data modify storage sawmill:temp 
 ## At the player, summon item
 execute at @s run summon item ~ ~ ~ {Item:{id:"minecraft:barrier", Count:1b}, Tags:["tac.new_item"]}
 
+##Play crafted sound
+playsound ui.stonecutter.take_result block @s
+
 ## Set nbt and remove tag
 data modify entity @e[type=item,limit=1,tag=tac.new_item] Item set from storage sawmill:temp recipe.output
 tag @e[type=item,tag=tac.new_item,limit=1] remove tac.new_item

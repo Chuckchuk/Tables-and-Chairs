@@ -16,7 +16,7 @@ fill ~ ~ ~ ~ ~ ~ air replace jungle_trapdoor
 setblock ~ ~ ~ barrel[facing=down]
 
 #set the name of the barrel
-data modify block ~ ~ ~ CustomName set value "{\"text\":\"Sawmill\",\"color\":\"light_gray\",\"italic\":\"false\"}"
+data modify block ~ ~ ~ CustomName set value "{\"text\":\"Sawmill\"}"
 
 function sawmill:place/place
 
